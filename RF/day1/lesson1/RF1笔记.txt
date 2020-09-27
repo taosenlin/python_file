@@ -1,0 +1,91 @@
+安装robot运行环境
+>>pip install robotframework
+检查是否安装好
+>>robot
+检查robot安装位置
+>>where robot  #windows
+>>whereis robot #mac/linux
+
+#robot可执行文件位置  $pythonpath/Scripts
+
+安装seleniumlibrary
+>>pip install robotframework-seleniumlibrary
+
+安装robot编辑环境-intellibot插件
+settings>plugin>install from disk >选择插件文件(intellibot.jar)
+重启pycharm让插件生效
+intellibot.jar下载地址：课程云盘目录>工具软件>robotframework,查找一下
+
+新建robot文件
+右键>新建file>输入filename.robot
+
+套件就是用例的集合
+如何组织用例？可以根据模块功能点，可以根据测试的需求
+在RF种，一个robot文件就是最小级别的测试套件
+往上就是目录
+
+
+RF用例的格式
+用例要写在testcase表下面
+*** Test Cases ***  #注意首字母要大写以便插件可以识别，单词空一个空格，建议用自动提示，即敲一个T
+用例名称     #注意，用例名称需要顶格写
+
+用例主体     
+#注意缩进，至少缩进两个空格（>=2），
+#用例主体由关键字组成,如果关键字需要用到参数，关键字与参数至少空两个空格（>=2）
+
+两个空格是RF的分割符
+
+#注释的写法和python一样，井号后面跟注释内容
+
+robot文件的编码格式必须是utf8,以确保能够正确解析unicode字符
+
+若非utf8可能会在运行用例的时候出现错误，如
+[ ERROR ] Parsing 'test.robot' failed: UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd3 in position 0: invalid continuation byte
+
+
+#RF执行用例的内部流程
+1.robot读取套件文件，检查格式，
+2.调用用例中涉及到的关键字
+3.关键字（即代码）完成具体工作
+
+
+#RF执行命令
+robot --options  datasource
+datasource：可以是文件也可以是目录，都代表用例所在的数据源
+文件：robot用例所在的文件
+目录：目录里面所有包含robot用例的文件，（所有子目录）
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+问题？
+1.一个robot文件里面可以有几个用例？
+A:多个用例
+
+
+
+2.robot中，测试套件有几种类型
+A:2 1.文件  2.目录
+
+
+3.robot用例的本质是什么？
+A: 由关键字组成的纯文本文件
+
+

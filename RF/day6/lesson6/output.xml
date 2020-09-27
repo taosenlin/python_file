@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.1 (Python 3.6.8 on win32)" generated="20200403 22:11:40.013" rpa="false">
+<suite id="s1" name="Webtest" source="E:\tmp\lesson6\webtest">
+<kw name="Log To Console" library="BuiltIn" type="setup">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>webtest初始化</arg>
+</arguments>
+<status status="PASS" starttime="20200403 22:11:40.051" endtime="20200403 22:11:40.052"></status>
+</kw>
+<suite id="s1-s1" name="管理员功能" source="E:\tmp\lesson6\webtest\管理员功能">
+<suite id="s1-s1-s1" name="登录" source="E:\tmp\lesson6\webtest\管理员功能\登录.robot">
+<test id="s1-s1-s1-t1" name="用例10001">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>用例10001主体部分</arg>
+</arguments>
+<status status="PASS" starttime="20200403 22:11:40.064" endtime="20200403 22:11:40.064"></status>
+</kw>
+<kw name="Fail" library="BuiltIn">
+<doc>Fails the test with the given message and optionally alters its tags.</doc>
+<msg timestamp="20200403 22:11:40.066" level="FAIL">AssertionError</msg>
+<status status="FAIL" starttime="20200403 22:11:40.065" endtime="20200403 22:11:40.066"></status>
+</kw>
+<tags>
+<tag>10001</tag>
+<tag>abctest</tag>
+<tag>admin</tag>
+<tag>smoking test</tag>
+<tag>web测试</tag>
+<tag>正确密码</tag>
+<tag>正确用户名</tag>
+<tag>登录</tag>
+</tags>
+<status status="FAIL" starttime="20200403 22:11:40.063" endtime="20200403 22:11:40.066" critical="no">AssertionError</status>
+</test>
+<test id="s1-s1-s1-t2" name="用例10002">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>用例10002主体部分</arg>
+</arguments>
+<status status="PASS" starttime="20200403 22:11:40.072" endtime="20200403 22:11:40.072"></status>
+</kw>
+<tags>
+<tag>10002</tag>
+<tag>abctest</tag>
+<tag>admin</tag>
+<tag>smoking test</tag>
+<tag>web测试</tag>
+<tag>正确密码</tag>
+<tag>正确用户名</tag>
+<tag>登录</tag>
+</tags>
+<status status="PASS" starttime="20200403 22:11:40.071" endtime="20200403 22:11:40.073" critical="yes"></status>
+</test>
+<test id="s1-s1-s1-t3" name="用例10003">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>用例10003主体部分</arg>
+</arguments>
+<status status="PASS" starttime="20200403 22:11:40.075" endtime="20200403 22:11:40.076"></status>
+</kw>
+<tags>
+<tag>10003</tag>
+<tag>abctest</tag>
+<tag>admin</tag>
+<tag>smoking test</tag>
+<tag>web测试</tag>
+<tag>正确用户名</tag>
+<tag>登录</tag>
+<tag>错误密码</tag>
+</tags>
+<status status="PASS" starttime="20200403 22:11:40.074" endtime="20200403 22:11:40.077" critical="yes"></status>
+</test>
+<test id="s1-s1-s1-t4" name="用例10004">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>用例10004主体部分</arg>
+</arguments>
+<status status="PASS" starttime="20200403 22:11:40.079" endtime="20200403 22:11:40.079"></status>
+</kw>
+<tags>
+<tag>abctest</tag>
+<tag>admin</tag>
+<tag>notag</tag>
+<tag>smoking test</tag>
+<tag>web测试</tag>
+<tag>登录</tag>
+</tags>
+<status status="PASS" starttime="20200403 22:11:40.078" endtime="20200403 22:11:40.080" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20200403 22:11:40.058" endtime="20200403 22:11:40.082"></status>
+</suite>
+<status status="PASS" starttime="20200403 22:11:40.053" endtime="20200403 22:11:40.086"></status>
+</suite>
+<suite id="s1-s2" name="老师功能" source="E:\tmp\lesson6\webtest\老师功能">
+<suite id="s1-s2-s1" name="登录" source="E:\tmp\lesson6\webtest\老师功能\登录.robot">
+<test id="s1-s2-s1-t1" name="用例30001">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>用例30001主体部分</arg>
+</arguments>
+<status status="PASS" starttime="20200403 22:11:40.096" endtime="20200403 22:11:40.097"></status>
+</kw>
+<tags>
+<tag>teacher</tag>
+<tag>web测试</tag>
+<tag>冒烟测试</tag>
+<tag>正确密码</tag>
+<tag>正确用户名</tag>
+<tag>登录</tag>
+</tags>
+<status status="PASS" starttime="20200403 22:11:40.095" endtime="20200403 22:11:40.098" critical="yes"></status>
+</test>
+<test id="s1-s2-s1-t2" name="用例30002">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>用例30002主体部分</arg>
+</arguments>
+<status status="PASS" starttime="20200403 22:11:40.101" endtime="20200403 22:11:40.101"></status>
+</kw>
+<tags>
+<tag>teacher</tag>
+<tag>web测试</tag>
+<tag>冒烟测试</tag>
+<tag>回归测试</tag>
+<tag>正确密码</tag>
+<tag>正确用户名</tag>
+<tag>登录</tag>
+</tags>
+<status status="PASS" starttime="20200403 22:11:40.100" endtime="20200403 22:11:40.102" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20200403 22:11:40.092" endtime="20200403 22:11:40.103"></status>
+</suite>
+<status status="PASS" starttime="20200403 22:11:40.089" endtime="20200403 22:11:40.105"></status>
+</suite>
+<status status="PASS" starttime="20200403 22:11:40.015" endtime="20200403 22:11:40.108"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="5" fail="0">Critical Tests</stat>
+<stat pass="5" fail="1">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" info="non-critical">10001</stat>
+<stat pass="1" fail="0">10002</stat>
+<stat pass="1" fail="0">10003</stat>
+<stat pass="3" fail="1">abctest</stat>
+<stat pass="3" fail="1">admin</stat>
+<stat pass="1" fail="0">notag</stat>
+<stat pass="3" fail="1">smoking test</stat>
+<stat pass="2" fail="0">teacher</stat>
+<stat pass="5" fail="1">web测试</stat>
+<stat pass="2" fail="0">冒烟测试</stat>
+<stat pass="1" fail="0">回归测试</stat>
+<stat pass="3" fail="1">正确密码</stat>
+<stat pass="4" fail="1">正确用户名</stat>
+<stat pass="5" fail="1">登录</stat>
+<stat pass="1" fail="0">错误密码</stat>
+</tag>
+<suite>
+<stat pass="5" fail="1" id="s1" name="Webtest">Webtest</stat>
+<stat pass="3" fail="1" id="s1-s1" name="管理员功能">Webtest.管理员功能</stat>
+<stat pass="3" fail="1" id="s1-s1-s1" name="登录">Webtest.管理员功能.登录</stat>
+<stat pass="2" fail="0" id="s1-s2" name="老师功能">Webtest.老师功能</stat>
+<stat pass="2" fail="0" id="s1-s2-s1" name="登录">Webtest.老师功能.登录</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

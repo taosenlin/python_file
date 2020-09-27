@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="884aa6ee-cc88-4e5c-926a-a95a07f16568" name="Default" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Jupyter Notebook" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/day1/dict/4字典-练习代码.py" />
+        <option value="$PROJECT_DIR$/day2/对象与变量.py" />
+        <option value="$PROJECT_DIR$/day2/2字符串.py" />
+        <option value="$PROJECT_DIR$/day3/1布尔表达式.py" />
+        <option value="$PROJECT_DIR$/day3/2条件判断.py" />
+        <option value="$PROJECT_DIR$/day3/3初始函数.py" />
+        <option value="$PROJECT_DIR$/day4/2字符串的格式化和用户输入.py" />
+        <option value="$PROJECT_DIR$/day5/循环语句与注释.py" />
+        <option value="$PROJECT_DIR$/day5/1循环语句与注释.py" />
+        <option value="$PROJECT_DIR$/ApiAutoTest/科达视讯云.py" />
+        <option value="$PROJECT_DIR$/day6/文件的读写.py" />
+        <option value="$PROJECT_DIR$/day7/循环嵌套与算法.py" />
+        <option value="$PROJECT_DIR$/day7/1循环嵌套与算法.py" />
+        <option value="$PROJECT_DIR$/day6/1文件的读写.py" />
+        <option value="$PROJECT_DIR$/day8.py" />
+        <option value="$PROJECT_DIR$/day8/再识函数.py" />
+        <option value="$PROJECT_DIR$/day8/1再识函数.py" />
+        <option value="$PROJECT_DIR$/day9/1面向对象一.py" />
+        <option value="$PROJECT_DIR$/day9/2面向对象二.py" />
+        <option value="$PROJECT_DIR$/exe/异常.py" />
+        <option value="$PROJECT_DIR$/exe/1异常.py" />
+        <option value="$PROJECT_DIR$/exe/python调用外部程序.py" />
+        <option value="$PROJECT_DIR$/exe/2python调用外部程序.py" />
+        <option value="$PROJECT_DIR$/day9/3异常.py" />
+        <option value="$PROJECT_DIR$/exe/test1.py" />
+        <option value="$PROJECT_DIR$/exe/3test1.py" />
+        <option value="$PROJECT_DIR$/day9/4正则表达式一.py" />
+        <option value="$PROJECT_DIR$/day9/5正则表达式二.py" />
+        <option value="$PROJECT_DIR$/exe/test2.py" />
+        <option value="$PROJECT_DIR$/day2/1对象与变量.py" />
+        <option value="$PROJECT_DIR$/exe/test4.py" />
+        <option value="$PROJECT_DIR$/day1/Selenium元素定位之css选择器/1.html" />
+        <option value="$PROJECT_DIR$/day1/Selenium元素定位之css选择器/2-（1).html" />
+        <option value="$PROJECT_DIR$/day1/Selenium元素定位之css选择器/2-（2).html" />
+        <option value="$PROJECT_DIR$/day1/Selenium元素定位之css选择器/2-（3).html" />
+        <option value="$PROJECT_DIR$/day1/Selenium元素定位之css选择器/2-（4).html" />
+        <option value="$PROJECT_DIR$/day1/Selenium元素定位之css选择器/css选择器高级用法.py" />
+        <option value="$PROJECT_DIR$/day1/Selenium元素定位之css选择器/3.html" />
+        <option value="$PROJECT_DIR$/day1/Selenium元素定位之xpath选择器/8-1.html" />
+        <option value="$PROJECT_DIR$/day1/Selenium元素定位之xpath选择器/8-2.html" />
+        <option value="$PROJECT_DIR$/day1/Selenium元素定位之xpath选择器/8-3.html" />
+        <option value="$PROJECT_DIR$/day1/CSS3中 ：nth-child 和 ：nth-of-type的区别/CSS3中 ：nth-child 和 ：nth-of-type的区别.py" />
+        <option value="$PROJECT_DIR$/day1/css选择器与xpath选择器对比/css选择器与xpath选择器对比.py" />
+        <option value="$PROJECT_DIR$/day1/Selenium元素定位之xpath选择器/xpath选择器高级用法.py" />
+        <option value="$PROJECT_DIR$/day4/1对象方法.py" />
+        <option value="$PROJECT_DIR$/day2/3列表与元组.py" />
+        <option value="$PROJECT_DIR$/day7/2字典.py" />
+        <option value="$PROJECT_DIR$/day1/知识点随摘/study.py" />
+        <option value="$PROJECT_DIR$/exe/test6.py" />
+        <option value="$PROJECT_DIR$/exe/test3.py" />
+        <option value="$PROJECT_DIR$/exe/test5.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="173" />
+    <option name="y" value="31" />
+    <option name="width" value="1229" />
+    <option name="height" value="783" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Buildout</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="untitled" type="b2602c69:ProjectViewProjectNode" />
+              <item name="untitled" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="untitled" type="b2602c69:ProjectViewProjectNode" />
+              <item name="untitled" type="462c0819:PsiDirectoryNode" />
+              <item name="exe" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Admin\PycharmProjects\untitled\day1\css选择器与xpath选择器对比" />
+      <recent name="C:\Users\Admin\PycharmProjects\untitled\day1" />
+      <recent name="C:\Users\Admin\PycharmProjects\untitled\day7" />
+      <recent name="C:\Users\Admin\PycharmProjects\untitled\tsl" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.json格式的编码与解码">
+    <configuration name="1面向对象一" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day9" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="untitled" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day9/1面向对象一.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="1异常" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/exe" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="untitled" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/exe/1异常.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="1对象方法" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day4" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="untitled" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day4/1对象方法.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="2字典" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day7" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="untitled" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day7/2字典.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="3列表与元组" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day2" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="untitled" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day2/3列表与元组.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="json格式的编码与解码" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/exe" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="untitled" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/exe/json格式的编码与解码.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="study" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day1/知识点随摘" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="untitled" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day1/知识点随摘/study.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="test3" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/exe" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="untitled" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/exe/test3.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="test5" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/exe" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="untitled" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/exe/test5.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="test6" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/exe" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="untitled" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/exe/test6.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="Python.test3" />
+      <item index="1" class="java.lang.String" itemvalue="Python.3列表与元组" />
+      <item index="2" class="java.lang.String" itemvalue="Python.test5" />
+      <item index="3" class="java.lang.String" itemvalue="Python.study" />
+      <item index="4" class="java.lang.String" itemvalue="Python.json格式的编码与解码" />
+    </list>
+    <recent_temporary>
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Python.json格式的编码与解码" />
+        <item index="1" class="java.lang.String" itemvalue="Python.test5" />
+        <item index="2" class="java.lang.String" itemvalue="Python.test3" />
+        <item index="3" class="java.lang.String" itemvalue="Python.study" />
+        <item index="4" class="java.lang.String" itemvalue="Python.3列表与元组" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="884aa6ee-cc88-4e5c-926a-a95a07f16568" name="Default" comment="" />
+      <created>1550802906263</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1550802906263</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="173" y="31" width="1229" height="783" extended-state="0" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2852432" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26268658" sideWeight="0.5028854" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25522387" sideWeight="0.4971146" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39823008" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="9" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/day7/1循环嵌套与算法.py" />
+    <entry file="file://$PROJECT_DIR$/day9/a.txt" />
+    <entry file="file://$PROJECT_DIR$/day9/error.txt" />
+    <entry file="file://$PROJECT_DIR$/exe/1异常.py" />
+    <entry file="file://$PROJECT_DIR$/exe/2python调用外部程序.py" />
+    <entry file="file://$PROJECT_DIR$/exe/3test1.py" />
+    <entry file="file://$PROJECT_DIR$/day9/3异常.py" />
+    <entry file="file://$PROJECT_DIR$/day8/1再识函数.py" />
+    <entry file="file://$PROJECT_DIR$/day9/4正则表达式一.py" />
+    <entry file="file://$PROJECT_DIR$/day9/2面向对象二.py" />
+    <entry file="file://$PROJECT_DIR$/day9/1面向对象一.py" />
+    <entry file="file://$PROJECT_DIR$/exe/test2.py" />
+    <entry file="file://$PROJECT_DIR$/test/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="25" lean-forward="true" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/Ui_appiumtool.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-300">
+          <caret line="9" column="42" lean-forward="true" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/login.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4233">
+          <caret line="11" column="19" lean-forward="true" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/log.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="54" lean-forward="true" selection-start-line="6" selection-start-column="54" selection-end-line="6" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/Fuc_app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-69">
+          <caret line="3" column="19" lean-forward="true" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day2/2字符串.py" />
+    <entry file="file://$PROJECT_DIR$/day9/5正则表达式二.py" />
+    <entry file="file://$PROJECT_DIR$/day2/1对象与变量.py" />
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/random.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2410">
+          <caret line="750" column="23" lean-forward="true" selection-start-line="750" selection-start-column="23" selection-end-line="750" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day6/1文件的读写.py" />
+    <entry file="file://$USER_HOME$/.PyCharmCE2017.2/system/python_stubs/1078232989/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="4984" column="8" lean-forward="false" selection-start-line="4984" selection-start-column="8" selection-end-line="4984" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day2/3列表与元组.py" />
+    <entry file="file://$PROJECT_DIR$/day1/Selenium元素定位之xpath选择器/8-1.html" />
+    <entry file="file://$PROJECT_DIR$/day1/Selenium元素定位之xpath选择器/8-2.html" />
+    <entry file="file://$PROJECT_DIR$/day1/Selenium元素定位之xpath选择器/8-3(4).html" />
+    <entry file="file://$PROJECT_DIR$/day1/CSS3中 ：nth-child 和 ：nth-of-type的区别/jieguo.png" />
+    <entry file="file://$PROJECT_DIR$/day1/CSS3中 ：nth-child 和 ：nth-of-type的区别/qubie.png" />
+    <entry file="file://$PROJECT_DIR$/day1/CSS3中 ：nth-child 和 ：nth-of-type的区别/CSS3中 ：nth-child 和 ：nth-of-type的区别.py" />
+    <entry file="file://$PROJECT_DIR$/day1/css选择器与xpath选择器对比/css选择器与xpath选择器对比.py" />
+    <entry file="file://$PROJECT_DIR$/day1/知识点随摘/study.py" />
+    <entry file="file://$PROJECT_DIR$/exe/test4.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="15" column="13" lean-forward="true" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day1/dict/1字典-增删改查.py" />
+    <entry file="file://$PROJECT_DIR$/day1/dict/2字典-常见操作.py" />
+    <entry file="file://$PROJECT_DIR$/day4/1对象方法.py" />
+    <entry file="file://$PROJECT_DIR$/day7/2字典.py" />
+    <entry file="file://$PROJECT_DIR$/exe/test3.py" />
+    <entry file="file://$PROJECT_DIR$/exe/test6.py" />
+    <entry file="file://$PROJECT_DIR$/day1/css选择器与xpath选择器对比/css-xpath.png" />
+    <entry file="file://$PROJECT_DIR$/day1/Selenium元素定位之css选择器/1.html" />
+    <entry file="file://$PROJECT_DIR$/day1/Selenium元素定位之css选择器/2-（1).html" />
+    <entry file="file://$PROJECT_DIR$/day1/Selenium元素定位之css选择器/2-（2).html" />
+    <entry file="file://$PROJECT_DIR$/day1/Selenium元素定位之css选择器/2-（3).html" />
+    <entry file="file://$PROJECT_DIR$/day1/Selenium元素定位之css选择器/2-（4).html" />
+    <entry file="file://$PROJECT_DIR$/day1/Selenium元素定位之css选择器/3.html" />
+    <entry file="file://$PROJECT_DIR$/day1/Selenium元素定位之css选择器/css选择器高级用法.py" />
+    <entry file="file://$PROJECT_DIR$/day1/Selenium元素定位之xpath选择器/xpath选择器高级用法.py" />
+    <entry file="file://$PROJECT_DIR$/day1/dict/4字典-练习代码.py" />
+    <entry file="file://$PROJECT_DIR$/exe/test5.py" />
+    <entry file="file://$PROJECT_DIR$/exe/json格式的编码与解码.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="30" column="24" lean-forward="true" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

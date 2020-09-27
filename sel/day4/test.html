@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css高级语法解析</title>
+    <style>
+        .a26727196-5d4a-4d58-8703-e29ea1b81f06 {
+            color: #cc0000
+        }
+
+        #a86498aa4-ef6e-4a29-bdf1-26442c574ace {
+            color: blueviolet
+        }
+
+        h4 {
+            color: green
+        }
+
+        div .a26727196-5d4a-4d58-8703-e29ea1b81f06 {
+            color: blue
+        }
+
+        #a785a81e-34ef-40c7-8185-74d2cfc8f0ea > * {
+            background: #cc6600
+        }
+
+        h4 .a26727196-5d4a-4d58-8703-e29ea1b81f06 {
+            background: #cc6600
+        }
+
+        #d1a0de02-a8c4-45f7-b5ea-b743d75de53d > p {
+            color: aqua
+        }    #使用 > 只能定位紧跟其后的一个
+
+        #d1a0de02-a8c4-45f7-b5ea-b743d75de53d p {
+            background: #777777
+        }    #使用  （空格）能定位其后面所有的需要元素
+
+        #a5caa0cdb-a433-41c3-a89a-a9e253d50b19 > p:nth-child(1) + p {
+            background: #66cc66
+        }
+
+        p[title="f23be51d-0f5a-48cd-aa06-6b1f2f4942b7"] {
+            color: #cc6600
+        }
+
+        p[title~="6b1f2f4942b7"] {
+            background: forestgreen
+        }  #注意包含某个单词的需要空格空出来
+
+        #c6353326-68a2-4a8c-8042-029696483705 ~ p {
+            background: aquamarine
+        }
+
+        #cd4b1536-5d87-475b-8b6e-831702cdae04 > a:nth-child(6) {
+            color: #cc0000
+        } #伪类操作 下标需要与标签想匹配  #选择什么标签并且标签下标要匹配
+
+        #cd4b1536-5d87-475b-8b6e-831702cdae04 > p:nth-of-type(4) {
+            background: violet
+        }#伪类操作  选择第几个什么标签
+    </style>
+</head>
+<body>
+<h4>这是 h4 标题</h4>
+<p class="a26727196-5d4a-4d58-8703-e29ea1b81f06">根据 class 属性选择</p>
+<p id="a86498aa4-ef6e-4a29-bdf1-26442c574ace">根据 id 属性选择</p>
+<div>
+    <p class="a26727196-5d4a-4d58-8703-e29ea1b81f06">根据标签和class组合</p>
+</div>
+
+<div id="a785a81e-34ef-40c7-8185-74d2cfc8f0ea">
+    <ul>
+        <li>第一行</li>
+        <li>第二行</li>
+    </ul>
+</div>
+
+<div id="d1a0de02-a8c4-45f7-b5ea-b743d75de53d">
+    <p>头部行1</p>
+    <div>
+        <p>第1行</p>
+        <p>第2行</p>
+        <p>第3行</p>
+    </div>
+</div>
+
+<div id="a5caa0cdb-a433-41c3-a89a-a9e253d50b19">
+    <p>紧挨着1</p>
+    <p>紧挨着2</p>
+    <p>紧挨着3</p>
+    <p>紧挨着4</p>
+    <div>
+        <p>第1行</p>
+        <p>第2行</p>
+        <p>第3行</p>
+    </div>
+</div>
+
+<p title="f23be51d-0f5a-48cd-aa06-6b1f2f4942b7">根据标签属性选择1</p>
+<p title="af23be51d-0f5a-48cd-aa06- 6b1f2f4942b7 aa06">根据标签属性选择2</p>
+
+
+<div>
+    <p>江郎才尽0</p>
+    <p id="c6353326-68a2-4a8c-8042-029696483705">江郎才尽1</p>
+
+    <p>江郎才尽2</p>
+    <p>江郎才尽3</p>
+</div>
+
+
+<div id="cd4b1536-5d87-475b-8b6e-831702cdae04">
+    <p>p1</p>
+    <p>p2</p>
+    <p>p3</p>
+    <a>a1</a>
+    <a>a2</a>
+    <a>a3</a>
+    <p>p4</p>
+    <div>
+        <div class="test">
+            <p>哈哈哈</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

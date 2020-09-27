@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<!--属性选择器-->
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <style type="text/css">
+            p{
+                color: blue;
+            }
+            p[title="one"]{
+                color: red;
+            }
+            p[title~="two"]{
+                color: green;
+            }
+            p[title|="three"]{
+                color: pink;
+            }
+
+
+        </style>
+    </head>
+
+    <body>
+        <p title="five">科达集团</p>
+        <p title="one">苏州科达</p>
+        <p title="one two">摩云致邻</p>
+        <p title="three-four">科达天行</p>
+
+    </body>
+
+</html>

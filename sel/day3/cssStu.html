@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css元素选择器语法学习</title>
+    <style>
+        #a5072709d-1f45-4ad5-b4e3-19b6de4b0398 {
+            color: #777777;
+        }
+
+        h4 {
+            color: red;
+        }
+
+        .by_class {
+            color: #cc6600
+        }
+
+        ul.by_class_and_tag {
+            color: blue
+        }
+
+        #e4c04b0b-7119-4c7e-a5c5-6aa2be9c7368 > div > table > tbody > tr:nth-child(1) > td:nth-child(2) {
+            color: blueviolet
+        }
+    </style>
+</head>
+<body>
+<div id="e4c04b0b-7119-4c7e-a5c5-6aa2be9c7368">
+    <a id="a5072709d-1f45-4ad5-b4e3-19b6de4b0398">通过id选择</a>
+    <br>
+    <h4>通过标签选择1</h4>
+    <h4>通过标签选择2</h4>
+    <p class="by_class">通过class选择1</p>
+    <p class="by_class">通过class选择2</p>
+    <ul class="by_class_and_tag">通过标签和class组合选择1</ul>
+    <ul class="by_class_and_tag">通过标签和class组合选择2</ul>
+
+    <div>
+        <table border="1">
+            <tbody>
+            <tr>
+                <td>100</td>
+                <td>200</td>
+                <td>300</td>
+            </tr>
+            <tr>
+                <td>400</td>
+                <td>500</td>
+                <td>600</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>
+
+</body>
+</html>

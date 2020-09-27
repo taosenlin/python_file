@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.1 (Python 3.6.8 on win32)" generated="20200304 21:57:50.061" rpa="false">
+<suite id="s1" name="T1" source="E:\tmp\lesson3\task\t1.robot">
+<test id="s1-t1" name="用例1">
+<kw name="List Course" library="course_mgr">
+<assign>
+<var>${courses}</var>
+</assign>
+<msg timestamp="20200304 21:57:52.452" level="INFO">${courses} = ['selenium', 'RF']</msg>
+<status status="PASS" starttime="20200304 21:57:50.433" endtime="20200304 21:57:52.452"></status>
+</kw>
+<kw name="${cour} IN [ @{courses} ]" type="for">
+<kw name="${cour} = selenium" type="foritem">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${cour}</arg>
+</arguments>
+<status status="PASS" starttime="20200304 21:57:52.453" endtime="20200304 21:57:52.454"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${cour}</arg>
+</arguments>
+<msg timestamp="20200304 21:57:52.455" level="INFO">selenium</msg>
+<status status="PASS" starttime="20200304 21:57:52.454" endtime="20200304 21:57:52.455"></status>
+</kw>
+<status status="PASS" starttime="20200304 21:57:52.453" endtime="20200304 21:57:52.455"></status>
+</kw>
+<kw name="${cour} = RF" type="foritem">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${cour}</arg>
+</arguments>
+<status status="PASS" starttime="20200304 21:57:52.455" endtime="20200304 21:57:52.455"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${cour}</arg>
+</arguments>
+<msg timestamp="20200304 21:57:52.456" level="INFO">RF</msg>
+<status status="PASS" starttime="20200304 21:57:52.455" endtime="20200304 21:57:52.456"></status>
+</kw>
+<status status="PASS" starttime="20200304 21:57:52.455" endtime="20200304 21:57:52.456"></status>
+</kw>
+<status status="PASS" starttime="20200304 21:57:52.453" endtime="20200304 21:57:52.456"></status>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<doc>Fails if the given condition is not true.</doc>
+<arguments>
+<arg>$courses==['selenium','RF']</arg>
+</arguments>
+<status status="PASS" starttime="20200304 21:57:52.457" endtime="20200304 21:57:52.467"></status>
+</kw>
+<status status="PASS" starttime="20200304 21:57:50.432" endtime="20200304 21:57:52.467" critical="yes"></status>
+</test>
+<test id="s1-t2" name="用例2">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>https://www.vmall.com/</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20200304 21:57:52.473" level="INFO">Opening browser 'chrome' to base url 'https://www.vmall.com/'.</msg>
+<status status="PASS" starttime="20200304 21:57:52.472" endtime="20200304 21:58:02.131"></status>
+</kw>
+<kw name="Get WebElements" library="SeleniumLibrary">
+<doc>Returns list of WebElement objects matching the ``locator``.</doc>
+<arguments>
+<arg>css=.home-recommend-goods.home-hot-goods .grid-list.clearfix .grid-title</arg>
+</arguments>
+<assign>
+<var>${eles}</var>
+</assign>
+<msg timestamp="20200304 21:58:02.239" level="INFO">${eles} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="79feb8de61d723096d5f71ff571dfd32", element="69adce09-51ad-46f9-b91b-c3fe300f8c6f")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (sessi...</msg>
+<status status="PASS" starttime="20200304 21:58:02.131" endtime="20200304 21:58:02.239"></status>
+</kw>
+<kw name="${ele} IN [ @{eles} ]" type="for">
+<kw name="${ele} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;79feb8de61d723096d5f71ff571dfd32&quot;, element=&quot;69adce09-51ad-46f9-b91b-c3fe300f8c6f&quot;)&gt;" type="foritem">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${ele.text}</arg>
+</arguments>
+<status status="PASS" starttime="20200304 21:58:02.243" endtime="20200304 21:58:02.346"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${ele.text}</arg>
+</arguments>
+<msg timestamp="20200304 21:58:02.366" level="INFO">HUAWEI nova 6</msg>
+<status status="PASS" starttime="20200304 21:58:02.347" endtime="20200304 21:58:02.366"></status>
+</kw>
+<status status="PASS" starttime="20200304 21:58:02.243" endtime="20200304 21:58:02.366"></status>
+</kw>
+<kw name="${ele} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;79feb8de61d723096d5f71ff571dfd32&quot;, element=&quot;4e80349b-b25a-48da-bde2-37b9b785d27e&quot;)&gt;" type="foritem">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${ele.text}</arg>
+</arguments>
+<status status="PASS" starttime="20200304 21:58:02.367" endtime="20200304 21:58:02.400"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${ele.text}</arg>
+</arguments>
+<msg timestamp="20200304 21:58:02.413" level="INFO">荣耀20 PRO</msg>
+<status status="PASS" starttime="20200304 21:58:02.401" endtime="20200304 21:58:02.413"></status>
+</kw>
+<status status="PASS" starttime="20200304 21:58:02.366" endtime="20200304 21:58:02.413"></status>
+</kw>
+<kw name="${ele} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;79feb8de61d723096d5f71ff571dfd32&quot;, element=&quot;a829f52c-ee4b-4d7d-9bca-c31ae5ea1dc3&quot;)&gt;" type="foritem">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${ele.text}</arg>
+</arguments>
+<status status="PASS" starttime="20200304 21:58:02.414" endtime="20200304 21:58:02.445"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${ele.text}</arg>
+</arguments>
+<msg timestamp="20200304 21:58:02.460" level="INFO">HUAWEI nova 5z</msg>
+<status status="PASS" starttime="20200304 21:58:02.446" endtime="20200304 21:58:02.460"></status>
+</kw>
+<status status="PASS" starttime="20200304 21:58:02.413" endtime="20200304 21:58:02.461"></status>
+</kw>
+<kw name="${ele} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;79feb8de61d723096d5f71ff571dfd32&quot;, element=&quot;260fd6ff-e6d8-45b0-8a18-4e81fadc33af&quot;)&gt;" type="foritem">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${ele.text}</arg>
+</arguments>
+<status status="PASS" starttime="20200304 21:58:02.461" endtime="20200304 21:58:02.483"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${ele.text}</arg>
+</arguments>
+<msg timestamp="20200304 21:58:02.499" level="INFO">荣耀V30 PRO</msg>
+<status status="PASS" starttime="20200304 21:58:02.483" endtime="20200304 21:58:02.499"></status>
+</kw>
+<status status="PASS" starttime="20200304 21:58:02.461" endtime="20200304 21:58:02.499"></status>
+</kw>
+<kw name="${ele} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;79feb8de61d723096d5f71ff571dfd32&quot;, element=&quot;c21f4086-df25-4c48-91a8-700e4c93af26&quot;)&gt;" type="foritem">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${ele.text}</arg>
+</arguments>
+<status status="PASS" starttime="20200304 21:58:02.499" endtime="20200304 21:58:02.517"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${ele.text}</arg>
+</arguments>
+<msg timestamp="20200304 21:58:02.530" level="INFO">荣耀Play3</msg>
+<status status="PASS" starttime="20200304 21:58:02.518" endtime="20200304 21:58:02.530"></status>
+</kw>
+<status status="PASS" starttime="20200304 21:58:02.499" endtime="20200304 21:58:02.530"></status>
+</kw>
+<kw name="${ele} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;79feb8de61d723096d5f71ff571dfd32&quot;, element=&quot;2627a6d5-1e42-4185-95ea-3eeb6b36758b&quot;)&gt;" type="foritem">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${ele.text}</arg>
+</arguments>
+<status status="PASS" starttime="20200304 21:58:02.530" endtime="20200304 21:58:02.612"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${ele.text}</arg>
+</arguments>
+<msg timestamp="20200304 21:58:02.628" level="INFO">HUAWEI P30</msg>
+<status status="PASS" starttime="20200304 21:58:02.612" endtime="20200304 21:58:02.628"></status>
+</kw>
+<status status="PASS" starttime="20200304 21:58:02.530" endtime="20200304 21:58:02.629"></status>
+</kw>
+<kw name="${ele} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;79feb8de61d723096d5f71ff571dfd32&quot;, element=&quot;70e37bef-3544-490d-9610-6cbc9901c9d1&quot;)&gt;" type="foritem">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${ele.text}</arg>
+</arguments>
+<status status="PASS" starttime="20200304 21:58:02.629" endtime="20200304 21:58:02.652"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${ele.text}</arg>
+</arguments>
+<msg timestamp="20200304 21:58:02.664" level="INFO">荣耀20青春版</msg>
+<status status="PASS" starttime="20200304 21:58:02.652" endtime="20200304 21:58:02.664"></status>
+</kw>
+<status status="PASS" starttime="20200304 21:58:02.629" endtime="20200304 21:58:02.664"></status>
+</kw>
+<kw name="${ele} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;79feb8de61d723096d5f71ff571dfd32&quot;, element=&quot;dc04d482-e8fa-41ee-9e8e-5d59e7004f05&quot;)&gt;" type="foritem">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${ele.text}</arg>
+</arguments>
+<status status="PASS" starttime="20200304 21:58:02.664" endtime="20200304 21:58:02.689"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${ele.text}</arg>
+</arguments>
+<msg timestamp="20200304 21:58:02.706" level="INFO">HUAWEI MateBook 13</msg>
+<status status="PASS" starttime="20200304 21:58:02.689" endtime="20200304 21:58:02.706"></status>
+</kw>
+<status status="PASS" starttime="20200304 21:58:02.664" endtime="20200304 21:58:02.706"></status>
+</kw>
+<status status="PASS" starttime="20200304 21:58:02.243" endtime="20200304 21:58:02.706"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20200304 21:58:02.707" endtime="20200304 21:58:04.874"></status>
+</kw>
+<status status="PASS" starttime="20200304 21:57:52.471" endtime="20200304 21:58:04.875" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20200304 21:57:50.063" endtime="20200304 21:58:04.877"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0">Critical Tests</stat>
+<stat pass="2" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" id="s1" name="T1">T1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

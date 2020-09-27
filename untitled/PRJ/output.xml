@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.1 (Python 3.7.0 on win32)" generated="20200730 09:55:41.911" rpa="false">
+<suite id="s1" name="Tc" source="C:\Users\Admin\PycharmProjects\untitled\PRJ\tc">
+<suite id="s1-s1" name="D-空白数据" source="C:\Users\Admin\PycharmProjects\untitled\PRJ\tc\d-空白数据">
+<kw name="Run Keywords" library="BuiltIn" type="setup">
+<doc>Executes all the given keywords in a sequence.</doc>
+<arguments>
+<arg>delete_all_school_student</arg>
+<arg>AND</arg>
+<arg>delete_all_school_teacher</arg>
+<arg>AND</arg>
+<arg>delete_all_school_class</arg>
+</arguments>
+<kw name="Delete All School Student" library="pylib.SchoolStudentLib">
+<msg timestamp="20200730 09:55:43.318" level="DEBUG">Starting new HTTP connection (1): ci.ytesting.com:80</msg>
+<msg timestamp="20200730 09:55:43.366" level="DEBUG">http://ci.ytesting.com:80 "GET /api/3school/students?vcode=00000010413159004340&amp;action=search_with_pagenation HTTP/1.1" 200 None</msg>
+<msg timestamp="20200730 09:55:43.370" level="DEBUG">Starting new HTTP connection (1): ci.ytesting.com:80</msg>
+<msg timestamp="20200730 09:55:43.465" level="DEBUG">http://ci.ytesting.com:80 "GET /api/3school/students?vcode=00000010413159004340&amp;action=search_with_pagenation HTTP/1.1" 200 None</msg>
+<msg timestamp="20200730 09:55:43.466" level="INFO">{'retcode': 0, 'retlist': []}
+{'retcode': 0, 'retlist': []}</msg>
+<status status="PASS" starttime="20200730 09:55:43.287" endtime="20200730 09:55:43.466"></status>
+</kw>
+<kw name="Delete All School Teacher" library="pylib.SchoolTeacherLib">
+<msg timestamp="20200730 09:55:43.471" level="DEBUG">Starting new HTTP connection (1): ci.ytesting.com:80</msg>
+<msg timestamp="20200730 09:55:43.565" level="DEBUG">http://ci.ytesting.com:80 "GET /api/3school/teachers?vcode=00000010413159004340&amp;action=search_with_pagenation HTTP/1.1" 200 None</msg>
+<msg timestamp="20200730 09:55:43.568" level="DEBUG">Starting new HTTP connection (1): ci.ytesting.com:80</msg>
+<msg timestamp="20200730 09:55:43.666" level="DEBUG">http://ci.ytesting.com:80 "GET /api/3school/teachers?vcode=00000010413159004340&amp;action=search_with_pagenation HTTP/1.1" 200 None</msg>
+<msg timestamp="20200730 09:55:43.669" level="INFO">{'retcode': 0, 'retlist': []}
+{'retcode': 0, 'retlist': []}</msg>
+<status status="PASS" starttime="20200730 09:55:43.467" endtime="20200730 09:55:43.669"></status>
+</kw>
+<kw name="Delete All School Class" library="pylib.SchoolClassLib">
+<msg timestamp="20200730 09:55:43.677" level="DEBUG">Starting new HTTP connection (1): ci.ytesting.com:80</msg>
+<msg timestamp="20200730 09:55:43.765" level="DEBUG">http://ci.ytesting.com:80 "GET /api/3school/school_classes?vcode=00000010413159004340&amp;action=list_classes_by_schoolgrade HTTP/1.1" 200 None</msg>
+<msg timestamp="20200730 09:55:43.768" level="DEBUG">Starting new HTTP connection (1): ci.ytesting.com:80</msg>
+<msg timestamp="20200730 09:55:43.862" level="DEBUG">http://ci.ytesting.com:80 "GET /api/3school/school_classes?vcode=00000010413159004340&amp;action=list_classes_by_schoolgrade HTTP/1.1" 200 None</msg>
+<msg timestamp="20200730 09:55:43.863" level="INFO">{'gradeid': None, 'retcode': 0, 'retlist': []}
+{'gradeid': None, 'retcode': 0, 'retlist': []}</msg>
+<status status="PASS" starttime="20200730 09:55:43.669" endtime="20200730 09:55:43.863"></status>
+</kw>
+<status status="PASS" starttime="20200730 09:55:43.287" endtime="20200730 09:55:43.863"></status>
+</kw>
+<suite id="s1-s1-s1" name="D-1班" source="C:\Users\Admin\PycharmProjects\untitled\PRJ\tc\d-空白数据\d-1班">
+<kw name="Add School Class" library="pylib.SchoolClassLib" type="setup">
+<arguments>
+<arg>${g_grade7_id}</arg>
+<arg>1班</arg>
+<arg>60</arg>
+<arg>isSaveId</arg>
+</arguments>
+<msg timestamp="20200730 09:55:43.881" level="DEBUG">Starting new HTTP connection (1): ci.ytesting.com:80</msg>
+<msg timestamp="20200730 09:55:43.970" level="DEBUG">http://ci.ytesting.com:80 "POST /api/3school/school_classes HTTP/1.1" 200 None</msg>
+<msg timestamp="20200730 09:55:43.972" level="INFO">${isSaveId} = 448533</msg>
+<msg timestamp="20200730 09:55:43.972" level="INFO">{'id': 448533, 'invitecode': '4485339641779', 'retcode': 0}</msg>
+<status status="PASS" starttime="20200730 09:55:43.875" endtime="20200730 09:55:43.972"></status>
+</kw>
+<suite id="s1-s1-s1-s1" name="D-班级管理" source="C:\Users\Admin\PycharmProjects\untitled\PRJ\tc\d-空白数据\d-1班\d-班级管理.robot">
+<test id="s1-s1-s1-s1-t1" name="添加班级2 - tc000002">
+<kw name="Add School Class" library="pylib.SchoolClassLib">
+<arguments>
+<arg>${g_grade7_id}</arg>
+<arg>2班</arg>
+<arg>60</arg>
+</arguments>
+<assign>
+<var>${ret_add}</var>
+</assign>
+<msg timestamp="20200730 09:55:43.988" level="DEBUG">Starting new HTTP connection (1): ci.ytesting.com:80</msg>
+<msg timestamp="20200730 09:55:44.115" level="DEBUG">http://ci.ytesting.com:80 "POST /api/3school/school_classes HTTP/1.1" 200 None</msg>
+<msg timestamp="20200730 09:55:44.116" level="INFO">{'id': 448534, 'invitecode': '4485348986485', 'retcode': 0}</msg>
+<msg timestamp="20200730 09:55:44.116" level="INFO">${ret_add} = {'invitecode': '4485348986485', 'retcode': 0, 'id': 448534}</msg>
+<status status="PASS" starttime="20200730 09:55:43.985" endtime="20200730 09:55:44.116"></status>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<doc>Fails if the given condition is not true.</doc>
+<arguments>
+<arg>$ret_add['retcode']==0</arg>
+</arguments>
+<status status="PASS" starttime="20200730 09:55:44.117" endtime="20200730 09:55:44.126"></status>
+</kw>
+<kw name="List School Class" library="pylib.SchoolClassLib">
+<arguments>
+<arg>${g_grade7_id}</arg>
+</arguments>
+<assign>
+<var>${ret_list}</var>
+</assign>
+<msg timestamp="20200730 09:55:44.129" level="DEBUG">Starting new HTTP connection (1): ci.ytesting.com:80</msg>
+<msg timestamp="20200730 09:55:44.166" level="DEBUG">http://ci.ytesting.com:80 "GET /api/3school/school_classes?vcode=00000010413159004340&amp;action=list_classes_by_schoolgrade&amp;gradeid=1 HTTP/1.1" 200 None</msg>
+<msg timestamp="20200730 09:55:44.168" level="INFO">{ 'gradeid': 1,
+  'retcode': 0,
+  'retlist': [ { 'grade__name': '七年级',
+                 'id': 448533,
+                 'invitecode': '4485339641779',
+                 'name': '1班',
+                 'studentlimit': 60,
+                 'studentnumber': 0,
+                 'teacherlist': []},
+               { 'grade__name': '七年级',
+                 'id': 448534,
+                 'invitecode': '4485348986485',
+                 'name': '2班',
+                 'studentlimit': 60,
+                 'studentnumber': 0,
+                 'teacherlist': []}]}</msg>
+<msg timestamp="20200730 09:55:44.168" level="INFO">${ret_list} = {'gradeid': 1, 'retlist': [{'name': '1班', 'grade__name': '七年级', 'invitecode': '4485339641779', 'studentlimit': 60, 'studentnumber': 0, 'id': 448533, 'teacherlist': []}, {'name': '2班', 'grade__name': '...</msg>
+<status status="PASS" starttime="20200730 09:55:44.126" endtime="20200730 09:55:44.168"></status>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<arguments>
+<arg>$ret_list['retlist']</arg>
+</arguments>
+<assign>
+<var>${fc}</var>
+</assign>
+<msg timestamp="20200730 09:55:44.169" level="INFO">${fc} = [{'name': '1班', 'grade__name': '七年级', 'invitecode': '4485339641779', 'studentlimit': 60, 'studentnumber': 0, 'id': 448533, 'teacherlist': []}, {'name': '2班', 'grade__name': '七年级', 'invitecode': '44853...</msg>
+<status status="PASS" starttime="20200730 09:55:44.169" endtime="20200730 09:55:44.169"></status>
+</kw>
+<kw name="Classlist Should Contain" library="pylib.SchoolClassLib">
+<arguments>
+<arg>${fc}</arg>
+<arg>2班</arg>
+<arg>七年级</arg>
+<arg>&amp;{ret_add}[invitecode]</arg>
+<arg>60</arg>
+<arg>0</arg>
+<arg>&amp;{ret_add}[id]</arg>
+</arguments>
+<msg timestamp="20200730 09:55:44.170" level="WARN">Accessing variable items using '&amp;{ret_add}[invitecode]' syntax is deprecated. Use '${ret_add}[invitecode]' instead.</msg>
+<msg timestamp="20200730 09:55:44.171" level="WARN">Accessing variable items using '&amp;{ret_add}[id]' syntax is deprecated. Use '${ret_add}[id]' instead.</msg>
+<status status="PASS" starttime="20200730 09:55:44.170" endtime="20200730 09:55:44.172"></status>
+</kw>
+<kw name="Delete School Class" library="pylib.SchoolClassLib" type="teardown">
+<arguments>
+<arg>&amp;{ret_add}[id]</arg>
+</arguments>
+<msg timestamp="20200730 09:55:44.173" level="WARN">Accessing variable items using '&amp;{ret_add}[id]' syntax is deprecated. Use '${ret_add}[id]' instead.</msg>
+<msg timestamp="20200730 09:55:44.177" level="DEBUG">Starting new HTTP connection (1): ci.ytesting.com:80</msg>
+<msg timestamp="20200730 09:55:44.276" level="DEBUG">http://ci.ytesting.com:80 "DELETE /api/3school/school_classes/448534 HTTP/1.1" 200 None</msg>
+<msg timestamp="20200730 09:55:44.277" level="INFO">{'retcode': 0}</msg>
+<status status="PASS" starttime="20200730 09:55:44.173" endtime="20200730 09:55:44.278"></status>
+</kw>
+<status status="PASS" starttime="20200730 09:55:43.982" endtime="20200730 09:55:44.278" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20200730 09:55:43.973" endtime="20200730 09:55:44.281"></status>
+</suite>
+<suite id="s1-s1-s1-s2" name="D-老师" source="C:\Users\Admin\PycharmProjects\untitled\PRJ\tc\d-空白数据\d-1班\d-老师">
+<kw name="Add School Teacher" library="pylib.SchoolTeacherLib" type="setup">
+<arguments>
+<arg>xiaotao</arg>
+<arg>小陶</arg>
+<arg>${g_mid_math_id}</arg>
+<arg>${isSaveId}</arg>
+<arg>15888888866</arg>
+<arg>tsl@qq.com</arg>
+<arg>21000000000000011</arg>
+<arg>isTeachSaveId</arg>
+</arguments>
+<msg timestamp="20200730 09:55:44.298" level="DEBUG">Starting new HTTP connection (1): ci.ytesting.com:80</msg>
+<msg timestamp="20200730 09:55:44.392" level="DEBUG">http://ci.ytesting.com:80 "POST /api/3school/teachers HTTP/1.1" 200 None</msg>
+<msg timestamp="20200730 09:55:44.396" level="INFO">${isTeachSaveId} = 136815</msg>
+<msg timestamp="20200730 09:55:44.396" level="INFO">{'id': 136815, 'retcode': 0}</msg>
+<status status="PASS" starttime="20200730 09:55:44.295" endtime="20200730 09:55:44.396"></status>
+</kw>
+<suite id="s1-s1-s1-s2-s1" name="D-老师管理" source="C:\Users\Admin\PycharmProjects\untitled\PRJ\tc\d-空白数据\d-1班\d-老师\d-老师管理.robot">
+<test id="s1-s1-s1-s2-s1-t1" name="添加老师2 - tc001002">
+<kw name="Add School Teacher" library="pylib.SchoolTeacherLib">
+<arguments>
+<arg>xiaowu</arg>
+<arg>小吴</arg>
+<arg>${g_mid_science_id}</arg>
+<arg>${isSaveId}</arg>
+<arg>15888888899</arg>
+<arg>wl@qq.com</arg>
+<arg>21000000000000022</arg>
+</arguments>
+<assign>
+<var>${ret_add_teacher}</var>
+</assign>
+<msg timestamp="20200730 09:55:44.416" level="DEBUG">Starting new HTTP connection (1): ci.ytesting.com:80</msg>
+<msg timestamp="20200730 09:55:44.492" level="DEBUG">http://ci.ytesting.com:80 "POST /api/3school/teachers HTTP/1.1" 200 None</msg>
+<msg timestamp="20200730 09:55:44.493" level="INFO">{'id': 136816, 'retcode': 0}</msg>
+<msg timestamp="20200730 09:55:44.493" level="INFO">${ret_add_teacher} = {'retcode': 0, 'id': 136816}</msg>
+<status status="PASS" starttime="20200730 09:55:44.413" endtime="20200730 09:55:44.493"></status>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<doc>Fails if the given condition is not true.</doc>
+<arguments>
+<arg>$ret_add_teacher['retcode']==0</arg>
+</arguments>
+<status status="PASS" starttime="20200730 09:55:44.494" endtime="20200730 09:55:44.495"></status>
+</kw>
+<kw name="List School Teacher" library="pylib.SchoolTeacherLib">
+<assign>
+<var>${ret_list_teacher}</var>
+</assign>
+<msg timestamp="20200730 09:55:44.499" level="DEBUG">Starting new HTTP connection (1): ci.ytesting.com:80</msg>
+<msg timestamp="20200730 09:55:44.565" level="DEBUG">http://ci.ytesting.com:80 "GET /api/3school/teachers?vcode=00000010413159004340&amp;action=search_with_pagenation HTTP/1.1" 200 None</msg>
+<msg timestamp="20200730 09:55:44.566" level="INFO">{ 'retcode': 0,
+  'retlist': [ { 'email': 'tsl@qq.com',
+                 'id': 136815,
+                 'idcardnumber': '21000000000000011',
+                 'phonenumber': '15888888866',
+                 'realname': '小陶',
+                 'teachclasslist': [448533],
+                 'username': 'xiaotao'},
+               { 'email': 'wl@qq.com',
+                 'id': 136816,
+                 'idcardnumber': '21000000000000022',
+                 'phonenumber': '15888888899',
+                 'realname': '小吴',
+                 'teachclasslist': [448533],
+                 'username': 'xiaowu'}]}</msg>
+<msg timestamp="20200730 09:55:44.566" level="INFO">${ret_list_teacher} = {'retlist': [{'username': 'xiaotao', 'teachclasslist': [448533], 'realname': '小陶', 'id': 136815, 'phonenumber': '15888888866', 'email': 'tsl@qq.com', 'idcardnumber': '21000000000000011'}, {'username':...</msg>
+<status status="PASS" starttime="20200730 09:55:44.496" endtime="20200730 09:55:44.566"></status>
+</kw>
+<kw name="Teacherlist Should Contain" library="pylib.SchoolTeacherLib">
+<arguments>
+<arg>&amp;{ret_list_teacher}[retlist]</arg>
+<arg>xiaowu</arg>
+<arg>小吴</arg>
+<arg>&amp;{ret_add_teacher}[id]</arg>
+<arg>${isSaveId}</arg>
+<arg>15888888899</arg>
+<arg>wl@qq.com</arg>
+<arg>21000000000000022</arg>
+</arguments>
+<msg timestamp="20200730 09:55:44.567" level="WARN">Accessing variable items using '&amp;{ret_list_teacher}[retlist]' syntax is deprecated. Use '${ret_list_teacher}[retlist]' instead.</msg>
+<msg timestamp="20200730 09:55:44.568" level="WARN">Accessing variable items using '&amp;{ret_add_teacher}[id]' syntax is deprecated. Use '${ret_add_teacher}[id]' instead.</msg>
+<status status="PASS" starttime="20200730 09:55:44.567" endtime="20200730 09:55:44.569"></status>
+</kw>
+<kw name="Delete School Teacher" library="pylib.SchoolTeacherLib" type="teardown">
+<arguments>
+<arg>&amp;{ret_add_teacher}[id]</arg>
+</arguments>
+<msg timestamp="20200730 09:55:44.570" level="WARN">Accessing variable items using '&amp;{ret_add_teacher}[id]' syntax is deprecated. Use '${ret_add_teacher}[id]' instead.</msg>
+<msg timestamp="20200730 09:55:44.573" level="DEBUG">Starting new HTTP connection (1): ci.ytesting.com:80</msg>
+<msg timestamp="20200730 09:55:44.700" level="DEBUG">http://ci.ytesting.com:80 "DELETE /api/3school/teachers/136816 HTTP/1.1" 200 None</msg>
+<msg timestamp="20200730 09:55:44.701" level="INFO">{'retcode': 0}</msg>
+<status status="PASS" starttime="20200730 09:55:44.569" endtime="20200730 09:55:44.701"></status>
+</kw>
+<status status="PASS" starttime="20200730 09:55:44.411" endtime="20200730 09:55:44.701" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20200730 09:55:44.397" endtime="20200730 09:55:44.703"></status>
+</suite>
+<kw name="Delete School Teacher" library="pylib.SchoolTeacherLib" type="teardown">
+<arguments>
+<arg>${isTeachSaveId}</arg>
+</arguments>
+<msg timestamp="20200730 09:55:44.714" level="DEBUG">Starting new HTTP connection (1): ci.ytesting.com:80</msg>
+<msg timestamp="20200730 09:55:44.799" level="DEBUG">http://ci.ytesting.com:80 "DELETE /api/3school/teachers/136815 HTTP/1.1" 200 None</msg>
+<msg timestamp="20200730 09:55:44.800" level="INFO">{'retcode': 0}</msg>
+<status status="PASS" starttime="20200730 09:55:44.709" endtime="20200730 09:55:44.800"></status>
+</kw>
+<status status="PASS" starttime="20200730 09:55:44.286" endtime="20200730 09:55:44.801"></status>
+</suite>
+<suite id="s1-s1-s1-s3" name="添加老师" source="C:\Users\Admin\PycharmProjects\untitled\PRJ\tc\d-空白数据\d-1班\添加老师.robot">
+<test id="s1-s1-s1-s3-t1" name="添加老师1 - tc001001">
+<kw name="Add School Teacher" library="pylib.SchoolTeacherLib">
+<arguments>
+<arg>xiaowu</arg>
+<arg>小吴</arg>
+<arg>${g_mid_math_id}</arg>
+<arg>${isSaveId}</arg>
+<arg>15888888899</arg>
+<arg>wl@qq.com</arg>
+<arg>21000000000000022</arg>
+</arguments>
+<assign>
+<var>${ret_add_teacher}</var>
+</assign>
+<msg timestamp="20200730 09:55:44.825" level="DEBUG">Starting new HTTP connection (1): ci.ytesting.com:80</msg>
+<msg timestamp="20200730 09:55:44.890" level="DEBUG">http://ci.ytesting.com:80 "POST /api/3school/teachers HTTP/1.1" 200 None</msg>
+<msg timestamp="20200730 09:55:44.892" level="INFO">{'id': 136817, 'retcode': 0}</msg>
+<msg timestamp="20200730 09:55:44.892" level="INFO">${ret_add_teacher} = {'retcode': 0, 'id': 136817}</msg>
+<status status="PASS" starttime="20200730 09:55:44.821" endtime="20200730 09:55:44.892"></status>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<doc>Fails if the given condition is not true.</doc>
+<arguments>
+<arg>$ret_add_teacher['retcode']==0</arg>
+</arguments>
+<status status="PASS" starttime="20200730 09:55:44.893" endtime="20200730 09:55:44.893"></status>
+</kw>
+<kw name="List School Teacher" library="pylib.SchoolTeacherLib">
+<assign>
+<var>${ret_list_teacher}</var>
+</assign>
+<msg timestamp="20200730 09:55:44.896" level="DEBUG">Starting new HTTP connection (1): ci.ytesting.com:80</msg>
+<msg timestamp="20200730 09:55:44.965" level="DEBUG">http://ci.ytesting.com:80 "GET /api/3school/teachers?vcode=00000010413159004340&amp;action=search_with_pagenation HTTP/1.1" 200 None</msg>
+<msg timestamp="20200730 09:55:44.966" level="INFO">{ 'retcode': 0,
+  'retlist': [ { 'email': 'wl@qq.com',
+                 'id': 136817,
+                 'idcardnumber': '21000000000000022',
+                 'phonenumber': '15888888899',
+                 'realname': '小吴',
+                 'teachclasslist': [448533],
+                 'username': 'xiaowu'}]}</msg>
+<msg timestamp="20200730 09:55:44.966" level="INFO">${ret_list_teacher} = {'retlist': [{'username': 'xiaowu', 'teachclasslist': [448533], 'realname': '小吴', 'id': 136817, 'phonenumber': '15888888899', 'email': 'wl@qq.com', 'idcardnumber': '21000000000000022'}], 'retcode': 0}</msg>
+<status status="PASS" starttime="20200730 09:55:44.894" endtime="20200730 09:55:44.966"></status>
+</kw>
+<kw name="Teacherlist Should Contain" library="pylib.SchoolTeacherLib">
+<arguments>
+<arg>&amp;{ret_list_teacher}[retlist]</arg>
+<arg>xiaowu</arg>
+<arg>小吴</arg>
+<arg>&amp;{ret_add_teacher}[id]</arg>
+<arg>${isSaveId}</arg>
+<arg>15888888899</arg>
+<arg>wl@qq.com</arg>
+<arg>21000000000000022</arg>
+</arguments>
+<msg timestamp="20200730 09:55:44.968" level="WARN">Accessing variable items using '&amp;{ret_list_teacher}[retlist]' syntax is deprecated. Use '${ret_list_teacher}[retlist]' instead.</msg>
+<msg timestamp="20200730 09:55:44.969" level="WARN">Accessing variable items using '&amp;{ret_add_teacher}[id]' syntax is deprecated. Use '${ret_add_teacher}[id]' instead.</msg>
+<status status="PASS" starttime="20200730 09:55:44.967" endtime="20200730 09:55:44.971"></status>
+</kw>
+<kw name="Delete School Teacher" library="pylib.SchoolTeacherLib" type="teardown">
+<arguments>
+<arg>&amp;{ret_add_teacher}[id]</arg>
+</arguments>
+<msg timestamp="20200730 09:55:44.971" level="WARN">Accessing variable items using '&amp;{ret_add_teacher}[id]' syntax is deprecated. Use '${ret_add_teacher}[id]' instead.</msg>
+<msg timestamp="20200730 09:55:44.976" level="DEBUG">Starting new HTTP connection (1): ci.ytesting.com:80</msg>
+<msg timestamp="20200730 09:55:45.099" level="DEBUG">http://ci.ytesting.com:80 "DELETE /api/3school/teachers/136817 HTTP/1.1" 200 None</msg>
+<msg timestamp="20200730 09:55:45.100" level="INFO">{'retcode': 0}</msg>
+<status status="PASS" starttime="20200730 09:55:44.971" endtime="20200730 09:55:45.100"></status>
+</kw>
+<status status="PASS" starttime="20200730 09:55:44.820" endtime="20200730 09:55:45.100" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20200730 09:55:44.809" endtime="20200730 09:55:45.103"></status>
+</suite>
+<kw name="Delete School Class" library="pylib.SchoolClassLib" type="teardown">
+<arguments>
+<arg>${isSaveId}</arg>
+</arguments>
+<msg timestamp="20200730 09:55:45.113" level="DEBUG">Starting new HTTP connection (1): ci.ytesting.com:80</msg>
+<msg timestamp="20200730 09:55:45.171" level="DEBUG">http://ci.ytesting.com:80 "DELETE /api/3school/school_classes/448533 HTTP/1.1" 200 None</msg>
+<msg timestamp="20200730 09:55:45.172" level="INFO">{'retcode': 0}</msg>
+<status status="PASS" starttime="20200730 09:55:45.109" endtime="20200730 09:55:45.172"></status>
+</kw>
+<status status="PASS" starttime="20200730 09:55:43.863" endtime="20200730 09:55:45.172"></status>
+</suite>
+<suite id="s1-s1-s2" name="添加班级" source="C:\Users\Admin\PycharmProjects\untitled\PRJ\tc\d-空白数据\添加班级.robot">
+<test id="s1-s1-s2-t1" name="添加班级1 - tc000001">
+<kw name="Add School Class" library="pylib.SchoolClassLib">
+<arguments>
+<arg>${g_grade7_id}</arg>
+<arg>1班</arg>
+<arg>60</arg>
+</arguments>
+<assign>
+<var>${ret_add}</var>
+</assign>
+<msg timestamp="20200730 09:55:45.199" level="DEBUG">Starting new HTTP connection (1): ci.ytesting.com:80</msg>
+<msg timestamp="20200730 09:55:45.267" level="DEBUG">http://ci.ytesting.com:80 "POST /api/3school/school_classes HTTP/1.1" 200 None</msg>
+<msg timestamp="20200730 09:55:45.268" level="INFO">{'id': 448535, 'invitecode': '4485356908561', 'retcode': 0}</msg>
+<msg timestamp="20200730 09:55:45.268" level="INFO">${ret_add} = {'invitecode': '4485356908561', 'retcode': 0, 'id': 448535}</msg>
+<status status="PASS" starttime="20200730 09:55:45.195" endtime="20200730 09:55:45.268"></status>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<doc>Fails if the given condition is not true.</doc>
+<arguments>
+<arg>$ret_add['retcode']==0</arg>
+</arguments>
+<status status="PASS" starttime="20200730 09:55:45.269" endtime="20200730 09:55:45.269"></status>
+</kw>
+<kw name="List School Class" library="pylib.SchoolClassLib">
+<arguments>
+<arg>${g_grade7_id}</arg>
+</arguments>
+<assign>
+<var>${ret_list}</var>
+</assign>
+<msg timestamp="20200730 09:55:45.273" level="DEBUG">Starting new HTTP connection (1): ci.ytesting.com:80</msg>
+<msg timestamp="20200730 09:55:45.365" level="DEBUG">http://ci.ytesting.com:80 "GET /api/3school/school_classes?vcode=00000010413159004340&amp;action=list_classes_by_schoolgrade&amp;gradeid=1 HTTP/1.1" 200 None</msg>
+<msg timestamp="20200730 09:55:45.366" level="INFO">{ 'gradeid': 1,
+  'retcode': 0,
+  'retlist': [ { 'grade__name': '七年级',
+                 'id': 448535,
+                 'invitecode': '4485356908561',
+                 'name': '1班',
+                 'studentlimit': 60,
+                 'studentnumber': 0,
+                 'teacherlist': []}]}</msg>
+<msg timestamp="20200730 09:55:45.366" level="INFO">${ret_list} = {'gradeid': 1, 'retlist': [{'name': '1班', 'grade__name': '七年级', 'invitecode': '4485356908561', 'studentlimit': 60, 'studentnumber': 0, 'id': 448535, 'teacherlist': []}], 'retcode': 0}</msg>
+<status status="PASS" starttime="20200730 09:55:45.270" endtime="20200730 09:55:45.366"></status>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<arguments>
+<arg>$ret_list['retlist'][0]</arg>
+</arguments>
+<assign>
+<var>${fc}</var>
+</assign>
+<msg timestamp="20200730 09:55:45.367" level="INFO">${fc} = {'name': '1班', 'grade__name': '七年级', 'invitecode': '4485356908561', 'studentlimit': 60, 'studentnumber': 0, 'id': 448535, 'teacherlist': []}</msg>
+<status status="PASS" starttime="20200730 09:55:45.367" endtime="20200730 09:55:45.367"></status>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<doc>Fails if the given condition is not true.</doc>
+<arguments>
+<arg>$fc['grade__name']=='七年级'</arg>
+</arguments>
+<status status="PASS" starttime="20200730 09:55:45.368" endtime="20200730 09:55:45.368"></status>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<doc>Fails if the given condition is not true.</doc>
+<arguments>
+<arg>$fc['name']=='1班'</arg>
+</arguments>
+<status status="PASS" starttime="20200730 09:55:45.369" endtime="20200730 09:55:45.369"></status>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<doc>Fails if the given condition is not true.</doc>
+<arguments>
+<arg>$fc['studentlimit']==60</arg>
+</arguments>
+<status status="PASS" starttime="20200730 09:55:45.369" endtime="20200730 09:55:45.370"></status>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<doc>Fails if the given condition is not true.</doc>
+<arguments>
+<arg>$fc['id']==$ret_add['id']</arg>
+</arguments>
+<status status="PASS" starttime="20200730 09:55:45.370" endtime="20200730 09:55:45.371"></status>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<doc>Fails if the given condition is not true.</doc>
+<arguments>
+<arg>$fc['invitecode']==$ret_add['invitecode']</arg>
+</arguments>
+<status status="PASS" starttime="20200730 09:55:45.371" endtime="20200730 09:55:45.372"></status>
+</kw>
+<kw name="Delete School Class" library="pylib.SchoolClassLib" type="teardown">
+<arguments>
+<arg>&amp;{ret_add}[id]</arg>
+</arguments>
+<msg timestamp="20200730 09:55:45.373" level="WARN">Accessing variable items using '&amp;{ret_add}[id]' syntax is deprecated. Use '${ret_add}[id]' instead.</msg>
+<msg timestamp="20200730 09:55:45.377" level="DEBUG">Starting new HTTP connection (1): ci.ytesting.com:80</msg>
+<msg timestamp="20200730 09:55:45.472" level="DEBUG">http://ci.ytesting.com:80 "DELETE /api/3school/school_classes/448535 HTTP/1.1" 200 None</msg>
+<msg timestamp="20200730 09:55:45.473" level="INFO">{'retcode': 0}</msg>
+<status status="PASS" starttime="20200730 09:55:45.373" endtime="20200730 09:55:45.473"></status>
+</kw>
+<status status="PASS" starttime="20200730 09:55:45.189" endtime="20200730 09:55:45.474" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20200730 09:55:45.178" endtime="20200730 09:55:45.477"></status>
+</suite>
+<status status="PASS" starttime="20200730 09:55:42.234" endtime="20200730 09:55:45.486"></status>
+</suite>
+<status status="PASS" starttime="20200730 09:55:41.920" endtime="20200730 09:55:45.492"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="0">Critical Tests</stat>
+<stat pass="4" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="4" fail="0" id="s1" name="Tc">Tc</stat>
+<stat pass="4" fail="0" id="s1-s1" name="D-空白数据">Tc.D-空白数据</stat>
+<stat pass="3" fail="0" id="s1-s1-s1" name="D-1班">Tc.D-空白数据.D-1班</stat>
+<stat pass="1" fail="0" id="s1-s1-s1-s1" name="D-班级管理">Tc.D-空白数据.D-1班.D-班级管理</stat>
+<stat pass="1" fail="0" id="s1-s1-s1-s2" name="D-老师">Tc.D-空白数据.D-1班.D-老师</stat>
+<stat pass="1" fail="0" id="s1-s1-s1-s2-s1" name="D-老师管理">Tc.D-空白数据.D-1班.D-老师.D-老师管理</stat>
+<stat pass="1" fail="0" id="s1-s1-s1-s3" name="添加老师">Tc.D-空白数据.D-1班.添加老师</stat>
+<stat pass="1" fail="0" id="s1-s1-s2" name="添加班级">Tc.D-空白数据.添加班级</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20200730 09:55:44.170" level="WARN">Accessing variable items using '&amp;{ret_add}[invitecode]' syntax is deprecated. Use '${ret_add}[invitecode]' instead.</msg>
+<msg timestamp="20200730 09:55:44.171" level="WARN">Accessing variable items using '&amp;{ret_add}[id]' syntax is deprecated. Use '${ret_add}[id]' instead.</msg>
+<msg timestamp="20200730 09:55:44.173" level="WARN">Accessing variable items using '&amp;{ret_add}[id]' syntax is deprecated. Use '${ret_add}[id]' instead.</msg>
+<msg timestamp="20200730 09:55:44.567" level="WARN">Accessing variable items using '&amp;{ret_list_teacher}[retlist]' syntax is deprecated. Use '${ret_list_teacher}[retlist]' instead.</msg>
+<msg timestamp="20200730 09:55:44.568" level="WARN">Accessing variable items using '&amp;{ret_add_teacher}[id]' syntax is deprecated. Use '${ret_add_teacher}[id]' instead.</msg>
+<msg timestamp="20200730 09:55:44.570" level="WARN">Accessing variable items using '&amp;{ret_add_teacher}[id]' syntax is deprecated. Use '${ret_add_teacher}[id]' instead.</msg>
+<msg timestamp="20200730 09:55:44.968" level="WARN">Accessing variable items using '&amp;{ret_list_teacher}[retlist]' syntax is deprecated. Use '${ret_list_teacher}[retlist]' instead.</msg>
+<msg timestamp="20200730 09:55:44.969" level="WARN">Accessing variable items using '&amp;{ret_add_teacher}[id]' syntax is deprecated. Use '${ret_add_teacher}[id]' instead.</msg>
+<msg timestamp="20200730 09:55:44.971" level="WARN">Accessing variable items using '&amp;{ret_add_teacher}[id]' syntax is deprecated. Use '${ret_add_teacher}[id]' instead.</msg>
+<msg timestamp="20200730 09:55:45.373" level="WARN">Accessing variable items using '&amp;{ret_add}[id]' syntax is deprecated. Use '${ret_add}[id]' instead.</msg>
+</errors>
+</robot>

@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.2 (Python 3.8.0 on win32)" generated="20200704 23:15:34.282" rpa="false">
+<suite id="s1" name="testCase" source="D:\PyCharm\tt\testCase.robot">
+<test id="s1-t1" name="case1">
+<kw name="deleteAllTeacher" library="rc" type="setup">
+<kw name="loginwebsite" library="rc">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>http://localhost/mgr/login/login.html</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20200704 23:15:34.417" level="INFO">Opening browser 'chrome' to base url 'http://localhost/mgr/login/login.html'.</msg>
+<status status="PASS" starttime="20200704 23:15:34.417" endtime="20200704 23:15:38.128"></status>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>10</arg>
+</arguments>
+<status status="PASS" starttime="20200704 23:15:38.128" endtime="20200704 23:15:38.129"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>css=.btn.btn-success</arg>
+</arguments>
+<msg timestamp="20200704 23:15:38.129" level="INFO">Clicking element 'css=.btn.btn-success'.</msg>
+<status status="PASS" starttime="20200704 23:15:38.129" endtime="20200704 23:15:38.166"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>css=.nav.navbar-nav li:nth-child(2)</arg>
+</arguments>
+<msg timestamp="20200704 23:15:38.166" level="INFO">Clicking element 'css=.nav.navbar-nav li:nth-child(2)'.</msg>
+<status status="PASS" starttime="20200704 23:15:38.166" endtime="20200704 23:15:38.623"></status>
+</kw>
+<status status="PASS" starttime="20200704 23:15:34.417" endtime="20200704 23:15:38.624"></status>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<status status="PASS" starttime="20200704 23:15:38.624" endtime="20200704 23:15:38.624"></status>
+</kw>
+<kw name="${i} IN RANGE [ 5 ]" type="for">
+<kw name="${i} = 0" type="foritem">
+<kw name="Get WebElements" library="SeleniumLibrary">
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<arguments>
+<arg>css=tbody&gt;.ng-scope td:nth-child(6) button:nth-child(2)</arg>
+</arguments>
+<assign>
+<var>${del_list}</var>
+</assign>
+<msg timestamp="20200704 23:15:38.912" level="INFO">${del_list} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="453280c89e3378c8a1bb258ce59d1f90", element="8665029a-dd86-4385-a1ca-4010a0df2ba9")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (sessi...</msg>
+<status status="PASS" starttime="20200704 23:15:38.625" endtime="20200704 23:15:38.912"></status>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>$del_list[0].click()</arg>
+</arguments>
+<status status="PASS" starttime="20200704 23:15:38.912" endtime="20200704 23:15:38.946"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>css=.btn.btn-primary</arg>
+</arguments>
+<msg timestamp="20200704 23:15:38.946" level="INFO">Clicking element 'css=.btn.btn-primary'.</msg>
+<status status="PASS" starttime="20200704 23:15:38.946" endtime="20200704 23:15:39.207"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20200704 23:15:40.208" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200704 23:15:39.207" endtime="20200704 23:15:40.209"></status>
+</kw>
+<status status="PASS" starttime="20200704 23:15:38.625" endtime="20200704 23:15:40.209"></status>
+</kw>
+<kw name="${i} = 1" type="foritem">
+<kw name="Get WebElements" library="SeleniumLibrary">
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<arguments>
+<arg>css=tbody&gt;.ng-scope td:nth-child(6) button:nth-child(2)</arg>
+</arguments>
+<assign>
+<var>${del_list}</var>
+</assign>
+<msg timestamp="20200704 23:15:40.223" level="INFO">${del_list} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="453280c89e3378c8a1bb258ce59d1f90", element="d88ac4aa-2ba1-4aec-a30f-76f78db05220")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (sessi...</msg>
+<status status="PASS" starttime="20200704 23:15:40.210" endtime="20200704 23:15:40.223"></status>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>$del_list[0].click()</arg>
+</arguments>
+<status status="PASS" starttime="20200704 23:15:40.223" endtime="20200704 23:15:40.251"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>css=.btn.btn-primary</arg>
+</arguments>
+<msg timestamp="20200704 23:15:40.252" level="INFO">Clicking element 'css=.btn.btn-primary'.</msg>
+<status status="PASS" starttime="20200704 23:15:40.252" endtime="20200704 23:15:40.473"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20200704 23:15:41.474" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200704 23:15:40.473" endtime="20200704 23:15:41.474"></status>
+</kw>
+<status status="PASS" starttime="20200704 23:15:40.209" endtime="20200704 23:15:41.474"></status>
+</kw>
+<kw name="${i} = 2" type="foritem">
+<kw name="Get WebElements" library="SeleniumLibrary">
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<arguments>
+<arg>css=tbody&gt;.ng-scope td:nth-child(6) button:nth-child(2)</arg>
+</arguments>
+<assign>
+<var>${del_list}</var>
+</assign>
+<msg timestamp="20200704 23:15:41.485" level="INFO">${del_list} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="453280c89e3378c8a1bb258ce59d1f90", element="d2630313-5b1a-44af-943f-3f4305468eaf")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (sessi...</msg>
+<status status="PASS" starttime="20200704 23:15:41.474" endtime="20200704 23:15:41.485"></status>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>$del_list[0].click()</arg>
+</arguments>
+<status status="PASS" starttime="20200704 23:15:41.485" endtime="20200704 23:15:41.511"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>css=.btn.btn-primary</arg>
+</arguments>
+<msg timestamp="20200704 23:15:41.511" level="INFO">Clicking element 'css=.btn.btn-primary'.</msg>
+<status status="PASS" starttime="20200704 23:15:41.511" endtime="20200704 23:15:41.710"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20200704 23:15:42.713" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200704 23:15:41.711" endtime="20200704 23:15:42.713"></status>
+</kw>
+<status status="PASS" starttime="20200704 23:15:41.474" endtime="20200704 23:15:42.713"></status>
+</kw>
+<kw name="${i} = 3" type="foritem">
+<kw name="Get WebElements" library="SeleniumLibrary">
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<arguments>
+<arg>css=tbody&gt;.ng-scope td:nth-child(6) button:nth-child(2)</arg>
+</arguments>
+<assign>
+<var>${del_list}</var>
+</assign>
+<msg timestamp="20200704 23:15:42.727" level="INFO">${del_list} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="453280c89e3378c8a1bb258ce59d1f90", element="43bc0c80-bf1f-4d44-8fa2-f2f49a1d5073")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (sessi...</msg>
+<status status="PASS" starttime="20200704 23:15:42.714" endtime="20200704 23:15:42.727"></status>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>$del_list[0].click()</arg>
+</arguments>
+<status status="PASS" starttime="20200704 23:15:42.728" endtime="20200704 23:15:42.755"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>css=.btn.btn-primary</arg>
+</arguments>
+<msg timestamp="20200704 23:15:42.755" level="INFO">Clicking element 'css=.btn.btn-primary'.</msg>
+<status status="PASS" starttime="20200704 23:15:42.755" endtime="20200704 23:15:42.960"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20200704 23:15:43.961" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200704 23:15:42.960" endtime="20200704 23:15:43.961"></status>
+</kw>
+<status status="PASS" starttime="20200704 23:15:42.714" endtime="20200704 23:15:43.961"></status>
+</kw>
+<kw name="${i} = 4" type="foritem">
+<kw name="Get WebElements" library="SeleniumLibrary">
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<arguments>
+<arg>css=tbody&gt;.ng-scope td:nth-child(6) button:nth-child(2)</arg>
+</arguments>
+<assign>
+<var>${del_list}</var>
+</assign>
+<msg timestamp="20200704 23:15:43.966" level="INFO">${del_list} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="453280c89e3378c8a1bb258ce59d1f90", element="f029c2db-ec76-47fa-bf49-04c4b8fdc13a")&gt;]</msg>
+<status status="PASS" starttime="20200704 23:15:43.961" endtime="20200704 23:15:43.966"></status>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>$del_list[0].click()</arg>
+</arguments>
+<status status="PASS" starttime="20200704 23:15:43.967" endtime="20200704 23:15:43.991"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>css=.btn.btn-primary</arg>
+</arguments>
+<msg timestamp="20200704 23:15:43.991" level="INFO">Clicking element 'css=.btn.btn-primary'.</msg>
+<status status="PASS" starttime="20200704 23:15:43.991" endtime="20200704 23:15:44.198"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20200704 23:15:45.200" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200704 23:15:44.198" endtime="20200704 23:15:45.200"></status>
+</kw>
+<status status="PASS" starttime="20200704 23:15:43.961" endtime="20200704 23:15:45.200"></status>
+</kw>
+<status status="PASS" starttime="20200704 23:15:38.624" endtime="20200704 23:15:45.200"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20200704 23:15:45.200" endtime="20200704 23:15:47.282"></status>
+</kw>
+<status status="PASS" starttime="20200704 23:15:34.416" endtime="20200704 23:15:47.283"></status>
+</kw>
+<kw name="Test Teach" library="test_Teacher.Test_Teach">
+<msg timestamp="20200704 23:15:51.370" level="INFO">{'retcode': 0, 'id': 53}
+新增老师的信息: {'id': 53, 'realname': 'tsl', 'desc': 'smart', 'display_idx': 1, 'username': 'tt15938757472853', 'courses': [{'course_id': 1}]}
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;测试通过&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;</msg>
+<status status="PASS" starttime="20200704 23:15:47.284" endtime="20200704 23:15:51.370"></status>
+</kw>
+<status status="PASS" starttime="20200704 23:15:34.415" endtime="20200704 23:15:51.370" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20200704 23:15:34.283" endtime="20200704 23:15:51.372"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="testCase">testCase</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

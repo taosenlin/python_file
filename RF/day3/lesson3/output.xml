@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.2 (Python 3.8.0 on win32)" generated="20200808 18:17:45.269" rpa="false">
+<suite id="s1" name="S4" source="D:\PyCharm\RF\day3\lesson3\s4.robot">
+<test id="s1-t1" name="测试1">
+<kw name="${i} IN RANGE [ 99 ]" type="for">
+<kw name="${i} = 0" type="foritem">
+<kw name="Get Value From User" library="Dialogs">
+<doc>Pauses test execution and asks user to input a value.</doc>
+<arguments>
+<arg>请输入成绩</arg>
+</arguments>
+<assign>
+<var>${score}</var>
+</assign>
+<msg timestamp="20200808 18:17:49.490" level="INFO">${score} = 70</msg>
+<status status="PASS" starttime="20200808 18:17:45.432" endtime="20200808 18:17:49.490"></status>
+</kw>
+<kw name="Continue For Loop If" library="BuiltIn">
+<doc>Skips the current for loop iteration if the ``condition`` is true.</doc>
+<arguments>
+<arg>$score == 'cont'</arg>
+</arguments>
+<status status="PASS" starttime="20200808 18:17:49.490" endtime="20200808 18:17:49.502"></status>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<arguments>
+<arg>$score == 'over'</arg>
+</arguments>
+<status status="PASS" starttime="20200808 18:17:49.502" endtime="20200808 18:17:49.503"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>int($score) &gt;= 60</arg>
+<arg>log to console</arg>
+<arg>及格了</arg>
+<arg>ELSE</arg>
+<arg>log to console</arg>
+<arg>不及格</arg>
+</arguments>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>及格了</arg>
+</arguments>
+<status status="PASS" starttime="20200808 18:17:49.504" endtime="20200808 18:17:49.504"></status>
+</kw>
+<status status="PASS" starttime="20200808 18:17:49.503" endtime="20200808 18:17:49.504"></status>
+</kw>
+<status status="PASS" starttime="20200808 18:17:45.432" endtime="20200808 18:17:49.504"></status>
+</kw>
+<kw name="${i} = 1" type="foritem">
+<kw name="Get Value From User" library="Dialogs">
+<doc>Pauses test execution and asks user to input a value.</doc>
+<arguments>
+<arg>请输入成绩</arg>
+</arguments>
+<assign>
+<var>${score}</var>
+</assign>
+<msg timestamp="20200808 18:17:55.728" level="INFO">${score} = cont</msg>
+<status status="PASS" starttime="20200808 18:17:49.504" endtime="20200808 18:17:55.728"></status>
+</kw>
+<kw name="Continue For Loop If" library="BuiltIn">
+<doc>Skips the current for loop iteration if the ``condition`` is true.</doc>
+<arguments>
+<arg>$score == 'cont'</arg>
+</arguments>
+<msg timestamp="20200808 18:17:55.729" level="INFO">Continuing for loop from the next iteration.</msg>
+<status status="PASS" starttime="20200808 18:17:55.728" endtime="20200808 18:17:55.729"></status>
+</kw>
+<status status="PASS" starttime="20200808 18:17:49.504" endtime="20200808 18:17:55.729"></status>
+</kw>
+<kw name="${i} = 2" type="foritem">
+<kw name="Get Value From User" library="Dialogs">
+<doc>Pauses test execution and asks user to input a value.</doc>
+<arguments>
+<arg>请输入成绩</arg>
+</arguments>
+<assign>
+<var>${score}</var>
+</assign>
+<msg timestamp="20200808 18:18:00.446" level="INFO">${score} = over</msg>
+<status status="PASS" starttime="20200808 18:17:55.729" endtime="20200808 18:18:00.446"></status>
+</kw>
+<kw name="Continue For Loop If" library="BuiltIn">
+<doc>Skips the current for loop iteration if the ``condition`` is true.</doc>
+<arguments>
+<arg>$score == 'cont'</arg>
+</arguments>
+<status status="PASS" starttime="20200808 18:18:00.446" endtime="20200808 18:18:00.447"></status>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<arguments>
+<arg>$score == 'over'</arg>
+</arguments>
+<msg timestamp="20200808 18:18:00.447" level="INFO">Exiting for loop altogether.</msg>
+<status status="PASS" starttime="20200808 18:18:00.447" endtime="20200808 18:18:00.448"></status>
+</kw>
+<status status="PASS" starttime="20200808 18:17:55.729" endtime="20200808 18:18:00.448"></status>
+</kw>
+<status status="PASS" starttime="20200808 18:17:45.432" endtime="20200808 18:18:00.448"></status>
+</kw>
+<status status="PASS" starttime="20200808 18:17:45.431" endtime="20200808 18:18:00.448" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20200808 18:17:45.271" endtime="20200808 18:18:00.449"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="S4">S4</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
